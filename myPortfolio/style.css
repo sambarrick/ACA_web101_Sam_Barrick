@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEWAgICQdD0xAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=);
+    font-family: Calibri, sans-serif;
+    background-color: gray;
     background-repeat: no-repeat;
     background-size: 1600px 1000px;
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
   }
   
@@ -40,19 +40,14 @@ body {
     border: 2px solid whitesmoke;
   }
   
-  .has-border {
-    border-radius: 25px;
-    background: black
-    border: 2px solid gray;
-    background: none;
-    padding: 10px;
-  }
+  
   
   nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding-right: 2%;
+
   }
   
   #profile-pic {
@@ -61,13 +56,14 @@ body {
     border-radius: 50%;
     margin: 15% auto;
     grid-column: 2/3;
+    display: flex;
   }
   
   h1 {
     color:white;
     grid-column: 2/3;
     margin: 3% auto;
-    border-bottom: 2px solid rgb(60, 231, 174);
+    border-bottom: 2px solid rgb(40, 197, 145);
   }
   
   h2 {
