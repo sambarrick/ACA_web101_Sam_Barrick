@@ -1,5 +1,9 @@
-@media (min-width: 600px) {
-    .column {
-      color: blue;
-    }
+@media (max-width: 768px) {
+ 
+  main {
+    background-color: #ed8a63;
   }
+  h1 {
+    color: white;
+  }
+}
