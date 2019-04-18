@@ -1,0 +1,21 @@
+@media (max-width: 576px) {
+  header {
+    background-color: #c9af98;
+    color: white
+  }
+  main {
+    background-color: #3a4660;
+  }
+  li {
+    background-color: #c9af98;
+  }
+  hr {
+    color: #ed8a63;
+    background-color: #ed8a63;
+    border-color: #ed8a63;
+  }
+  button {
+    border-color: #c9af98;
+    color: #c9af98;
+  }
+}
