@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 50px;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+}
+.wrap{
+  width: 400px;
+  height: auto;
+  background-color: rgb(19, 89, 168);
+  padding: 15px;
+  margin: auto;
+}
+input[type=text]{
+  width: 100%;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+input[type=button]{
+  width: 89px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+ background-color: lightgray;
+ color: black;
+}
+
+  #del{  
+    width: 100%;
+    color: red;
+    background-color: cornsilk;
+}
