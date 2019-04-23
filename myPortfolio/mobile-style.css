@@ -1,0 +1,28 @@
+/* CSS media query within a stylesheet */
+
+@media (max-width: 576px) {
+    main {
+        background-color:#3a4660;
+      }
+      h1 {
+        color: white;
+      }
+      li{
+        background-color: #c9af98;
+      }
+      header {
+        display: block;
+        background-color: #c9af98;
+        text-align: center;
+      }
+      hr{
+          color: #ed8a63;
+          background-color: #ed8a63;
+          border-color: #ed8a63;
+      }
+
+      button{
+          color: #c9af98;
+          border-color: #c9af98;
+      }
+    }
