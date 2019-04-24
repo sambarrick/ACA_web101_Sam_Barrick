@@ -1,0 +1,77 @@
+body {
+  margin: 0 auto;
+  width: 850px;
+}
+
+main {
+  display: flex;
+  height: 450px;
+  width: 850px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-image: url(./space.jpg);
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+section {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 324px;
+  width: 850px;
+  background-color: rgb(224, 222, 222);
+}
+
+article {
+  width: 270px;
+  height: 324px;
+  background-color: rgb(224, 222, 222);
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+h2{
+    margin-bottom: 10%;
+    font-size: 22px;
+}
+p {
+  line-height: 10px;
+}
+#name {
+  width: 70%;
+  padding: 5px;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+#message {
+  width: 70%;
+  padding: 25px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+button {
+  color: white;
+  background-color: rgb(61, 61, 61);
+  text-align: center;
+  height: 30px;
+  width: 30%;
+  font-size: 20px;
+}
+#portfolio {
+  display: flex;
+  color: white;
+  background-color: purple;
+  text-align: center;
+  height: 30px;
+  width: 67px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
