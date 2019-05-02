@@ -1,4 +1,104 @@
-body{
+body {
+    display: grid;
+    margin: 0 auto;
+    font-family: 'Carter One', cursive;
+}
 
-background-image: url(./mustache2.jpg);
+header {
+    display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+nav {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding: 10px;
+  word-spacing: 20px;
+
+}
+#nav {
+  list-style: none;
+  display: inline;
+  text-align: center;
+}
+#nav:hover {
+  color: rgba(21, 182, 182);
+}
+
+#shades {
+  width: 100%;
+}
+#textlines{
+background-color: black;
+text-align: center;
+color: white
+}
+h2{
+font-size: 30px;
+}
+p {
+font-size: 22px;
+}
+button {
+  color: white;
+  background-color: rgba(21, 182, 182, 0.993);
+  margin-bottom: 3%;
+  width: 200px;
+  border-radius: 8%;
+  border-color: black;
+  font-size: 24px;
+  text-align: center;
+}
+#photolist {
+  list-style: none;
+  display: inline;
+  align-items: center;
+  padding: 3.5%;
+  justify-content: space-around;
+}
+#photolist:hover {
+  opacity: 0.6;
+}
+
+#thefather,
+#theactor,
+#thenerd {
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  margin: 0, auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+#copyright {
+  padding-top: 2%;
+  font-size: 18px;
+}
+#icons {
+  font-size: 30px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+@media (min-width: 400px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+}
+#photolist {
+  text-align: center;
 }
