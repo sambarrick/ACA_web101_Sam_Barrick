@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 42px;
+    background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-037.jpg);
+}
+
+.container {
+    display: grid;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "header header " "nav nav" "main aside" "footer footer"
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    color: rgb(28, 204, 204);
+}
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    word-spacing: 30px;
+    font-size: 30px;
+    display: inline;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.work:hover {
+    color: rgb(28, 204, 204);
+    display: inline;
+}
+
+.contact:hover {
+    color: rgb(28, 204, 204);
+    display: inline;
+}
+
+.about:hover {
+    color: rgb(28, 204, 204);
+}
+
+main {
+    grid-area: main;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 36px;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    padding-top: 20px;
+    box-sizing: content-box;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+aside {
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.form {
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px;
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    ;
+    display: block;
+    font-size: 24px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+
+}
+
+.footer li {
+    list-style: none;
+    display: inline;
+    font-size: 35px;
+}
+
+#linkedin {
+    color: black;
+}
+
+#linkedin:hover {
+    color: rgb(28, 204, 204);
+}
+
+#instagram {
+    color: black;
+    padding: 20px;
+}
+
+#instagram:hover {
+    color: rgb(28, 204, 204);
+}
+
+#medium {
+    color: black;
+    padding: 20px;
+}
+
+#medium:hover {
+    color: rgb(28, 204, 204);
+}
+
+#twitter {
+    color: black;
+    padding: 20px;
+}
+
+#twitter:hover {
+    color: rgb(28, 204, 204);
+}
