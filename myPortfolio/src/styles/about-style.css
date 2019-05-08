@@ -1,0 +1,107 @@
+body {
+  font-family: "Just Another Hand", cursive;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "nav" "main" "footer";
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  color: rgb(28, 204, 204);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-top: 50px;
+  font-size: 42px;
+  background-color: gray;
+}
+nav {
+  grid-area: nav;
+  text-align: center;
+  font-size: 36px;
+  word-spacing: 50px;
+
+  padding-bottom: 50px;
+}
+.navbar li {
+  text-align: center;
+  list-style: none;
+  display: inline;
+}
+.work:hover {
+  color: rgb(28, 204, 204);
+  display: inline;
+}
+.contact:hover {
+  color: rgb(28, 204, 204);
+  display: inline;
+}
+.about:hover {
+  color: rgb(28, 204, 204);
+}
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  background-color: green;
+}
+.pic:hover {
+  opacity: 0.7;
+}
+p {
+  font-size: 30px;
+  text-align: center;
+}
+footer {
+  grid-area: footer;
+  font-size: 35px;
+  padding-right: 50px;
+  text-align: center;
+  background-color: gray;
+  padding-top: 12px;
+}
+.footer li {
+  list-style: none;
+  font-size: 35px;
+  display: inline;
+  text-align: center;
+}
+#linkedin {
+  color: black;
+}
+#linkedin:hover {
+  color: rgb(28, 204, 204);
+}
+
+#instagram {
+  color: black;
+  padding: 20px;
+}
+#instagram:hover {
+  color: rgb(28, 204, 204);
+}
+#medium {
+  color: black;
+  padding: 20px;
+}
+#medium:hover {
+  color: rgb(28, 204, 204);
+}
+
+#twitter {
+  color: black;
+  padding: 20px;
+}
+#twitter:hover {
+  color: rgb(28, 204, 204);
+}
