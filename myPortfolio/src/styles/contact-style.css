@@ -1,0 +1,95 @@
+body{
+background-color: rgb(36, 36, 36);
+color: rgb(230, 230, 230);
+}
+.container{
+display: grid;
+
+}
+.header{
+    float: left;
+    padding: 10px;
+    color: rgb(3, 216, 216);
+    font-size: 22px;
+}
+ul{
+    list-style: none;
+    display: inline;
+    font-size: 22px;
+}
+li a {text-decoration: none;}
+li a:visited {text-decoration: none; color: white;}
+li a:hover{text-decoration: none; color: rgb(249, 55, 210);}
+
+.contact:hover{
+color: rgb(249, 55, 210);
+}
+
+.about, .work, .contact{
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+}
+h2{
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 36px;
+}
+h3{
+    text-align: center;
+    font-size: 26px;
+}
+p{
+    font-size: 24px;
+}
+form{
+    text-align: center;
+}
+.name{
+    width: 300px;
+    height: 30px;
+    border-style: solid; color: gray;
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: gray;
+    font-size: 18px;
+}
+.email{
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    border-style: solid; color: gray;
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: gray;
+    font-size: 18px;
+}
+.message{
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid; color: gray;
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: gray;
+    font-size: 18px;
+}
+.submit, .reset{
+    width: 80px;
+    font-size: 50px;
+}
+li #linkedin:hover{text-decoration: none;}
+li #linkedin:visited {text-decoration: none; color: white;}
+
+footer{
+    text-align: right;
+}
+.footer li{
+    display: inline;
+    font-size: 40px;
+    padding: 10px;
+}
