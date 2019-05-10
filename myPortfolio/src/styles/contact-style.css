@@ -94,6 +94,19 @@ footer{
     padding: 10px;
 }
 
-@media (min-width:100px){
+@media (max-width: 400px){
+    .container{
+        display: flex;
+    }
+    .header, .about, .work, .content{
+        justify-content: center;
+    }
+        .submit, .reset{
+            justify-content: center;
+            width: 20px;
+            font-size: 20px;
+        
+    }
+    
     
 }
