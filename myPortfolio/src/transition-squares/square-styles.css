@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.squares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 800px;
+    background-color: rgb(156, 156, 157);
+    margin: 0 auto;
+}
+.a{
+    border: solid 2px;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+  
+}
+.b{
+    border: solid 2px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.c{
+    border: solid 2px;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.d{
+    border: solid 2px;
+    background-color: purple;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.e{
+    border: solid 2px;
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.f{
+    border: solid 2px;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.g{
+    border: solid 2px;
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.h{
+    border: solid 2px;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.j{
+    border: solid 2px;
+    background-color: rgb(108, 88, 208);
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.k{
+    border: solid 2px;
+    background-color: rgb(170, 255, 0);
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.l{
+    border: solid 2px;
+    background-color: rgb(104, 104, 103);
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+.m{
+    border: solid 2px;
+    background-color: rgb(47, 130, 255);
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2px;
+}
+div:hover:nth-of-type(even) {
+height: 25px;
+width: 25px;
+    -webkit-transform: rotate(-360deg);
+    -webkit-transition: width 3s, height 3s, -webkit-transform 2s;
+    transition: width 3s, height 3s, transform 3s;
+    transform: translateX(-485px) rotate(-360deg);
+}
+    
+div:hover:nth-of-type(odd) {
+    height: 100px;
+width: 100px;
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+-webkit-transition: width 5s, height 5s, -webkit-transform 2s;
+transition: width 5s, height 5s, transform 5s;
+transform: translateX(450px) rotate(360deg);
+}
