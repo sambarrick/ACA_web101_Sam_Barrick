@@ -1,0 +1,170 @@
+body{
+  font-family: 'Poppins', sans-serif;
+    background-color: rgb(67, 40, 26);
+    display: grid;
+    grid-template-rows: 1fr .5fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "header header header" "nav nav nav" "aside0 main aside" "footer footer footer"
+}
+header{
+    grid-area: header;
+    width: 100%;
+    color: white;
+    background-color: orangered;
+}
+.logo{
+    float: left;
+}
+h1{
+    padding-right: 20px;
+    float: right;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(126, 71, 43);
+    text-align: center;
+    padding-top: 12px;
+}
+li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 60px;
+    text-align: center;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: goldenrod;
+}
+a:hover{
+    background-color: white;
+}
+main{
+    grid-area: main;
+   width: 1000px;
+}
+p{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+div.gallery{
+  border: 1px solid goldenrod;
+
+}
+
+div.gallery:hover {
+  border: 1px solid orangered;
+}
+
+div.gallery img {
+  width: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  width: 100%;
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+}
+
+@media only screen and (max-width: 576px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+ 
+    body{
+        display: grid;
+        grid-template-rows: .25fr .25fr 5fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "nav" "main" "footer";
+    }
+   
+    nav{
+        display: block;
+        background-color: rgb(126, 71, 43)
+    }
+    li{
+      display: block;
+    }
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: inline;
+    margin-left: 12%;
+}
+
+button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(67, 40, 26);
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+}
+footer {
+  display: grid;
+  grid-area: footer;
+  background-color: orangered;
+}
+
+p1 {
+    margin-left: 45%;
+    padding-bottom: 5px;
+    color: white;
+}

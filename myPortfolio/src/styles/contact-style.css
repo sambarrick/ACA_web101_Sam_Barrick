@@ -1,5 +1,6 @@
 body{
-background-color: rgb(36, 36, 36);
+background-image: url(https://images.unsplash.com/photo-1472457847783-3d10540b03d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+width: 100%;
 color: rgb(230, 230, 230);
 }
 .container{
