@@ -5,29 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="ticTacToe-style.css"/>
-    <script src="ticTacToe.js"></script>
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
-    <header>
-<h1>Play Tic Tac Toe!</h1>
-    </header>
 
-        <div class="top-left">X</div>
-        <div class="top">O</div>
-        <div class="top-right">X</div>
-        <div class="left">O</div>
-        <div class="middle">X</div>
-        <div class="right">O</div>
-        <div class="bottom-left">X</div>
-        <div class="bottom">O</div>
-        <div class="bottom-right">X</div>
-   
+        <div class="gamecontainer"> 
+            <table>
+        
+            <tr name="0">
+            <td name="0"></td> <td name="1"></td> <td name="2"></td>
+            </tr>
+        
+            <tr name="1">
+            <td name="0"></td> <td name="1"></td> <td name="2"></td>
+            </tr>
+        
+            <tr name="2">
+            <td name="0"></td> <td name="1"></td> <td name="2"></td>
+            </tr>
+        
+            </table>
+        
+            
+            <button class="player" name="X"> Player X </button>
+            <button class="player" name="O"> Player O </button>
+        
+        
+            <div class="nextmoveby"> Next move by : <span name="whoseturn"> </span> </div>
+            <div class="gameover"> Game Over! Player <span name="whowon"> </span> won!</div>
+        </div>
 
-     <p class="score">Score</p>
-     <p class="player1">Player 1</p>
-     <p class="player2">Player 2</p>
-
-          
+          <script src="./jquery.min.js"></script>
+          <script src="ticTacToe.js"></script>
           </body>
 </html>
