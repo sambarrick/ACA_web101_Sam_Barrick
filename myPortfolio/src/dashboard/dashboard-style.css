@@ -1,12 +1,13 @@
 .container {
   display: grid;
+  grid-template-areas: "header" "nav" "main2" "main" "aside" "banner" "footer";
 }
 
 body {
   width: 100%;
   display: grid;
   font-family: Helvetica, sans-serif;
-  background: url(../images/unnamed.jpg);
+  background: url(./unnamed.jpg);
   background-repeat: no-repeat;
   grid-template-columns: 1fr 3fr 1fr;
   margin: 0 auto;
@@ -43,17 +44,13 @@ header {
 
 .topnav a {
   color: black;
-  text-align: center;
   padding: auto;
   text-decoration: none;
-  font-size: 17px;
-  display: inline;
+
 }
 
 .topnav a:hover {
   background-color: rgb(255, 45, 227, 0.6);
-  color: black;
-  display: inline;
 }
 
 main2 {
@@ -298,11 +295,9 @@ aside {
   color: white;
   padding: 0 7px;
 }
-
 .doubleWidth {
   flex: 2;
 }
-
 .banner {
   background-color: rgba(106, 231, 158, 0.6);
   grid-area: banner;
@@ -315,12 +310,6 @@ aside {
   padding-top: 1%;
   padding-bottom: 1%; 
 }
-
-li {
-  font-size: 18px;
-  line-height: 25px;
-}
-
 form {
   margin: 0 auto;
   width: 500px;
@@ -328,26 +317,65 @@ form {
 }
 #name{
   height: 30px;
-}
-
-#name {
   width: 70%;
   padding: 5px;
   margin-bottom: 2%;
-  box-sizing: border-box;
+  
 }
 
-.container {
-  display: grid;
-  grid-template-areas: "header" "nav" "main2" "main" "aside" "banner" "footer";
+.item{
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    list-style-type: none;
+    width: 15%;
+    margin: 0px auto;
+    border-radius: 3px;
+    border: 1px solid #000;
+  }
+  li{
+    list-style: none;
+    background-color: #fff;
+    border: 2px black solid;
+    margin: 0px auto;
+    width: 15%;
+    margin-top: 10px;
+    word-wrap: break-word;
+    text-align: center
+  }
+  input[type='text'] {
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  input[type='submit'] {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+  }
+  
+#newItemButton {
+  display: none;
+  
+}
+#add{
+  margin: 0 auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 @media (min-width: 100px) {
   .container {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "header header header" "topnav topnav topnav" "main2 main2 main2" "main main main" "aside aside aside" "banner banner banner"
   }
   header{
+    grid-area: header;
     width: 300px;
     margin-top: 3%;
   }
