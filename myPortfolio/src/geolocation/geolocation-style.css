@@ -1,0 +1,436 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "header header" "topnav topnav" "clock clock clock" "main main" "main2 aside" "banner banner";
+}
+
+body {
+  width: 100%;
+  display: grid;
+  font-family: 'Roboto Slab', serif;
+  background-image: linear-gradient(lightgray, black);
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(106, 231, 158, 0.6);
+  grid-area: header;
+  text-align: center;
+  border-radius: 3%;
+  font-size: 22px;
+ margin: 0 auto;
+padding-left: 2%;
+padding-right: 2%;
+  box-shadow: 10px 10px 10px rgb(48, 48, 48);
+}
+button{
+  background-color: transparent;
+  border-color: transparent;
+  padding-bottom: 2px;
+  font-size: 18px;
+}
+#location{
+  background-color: transparent;
+}
+.topnav {
+  display: inline;
+  position: relative;
+  grid-area: topnav;
+  text-align: center;
+  font-size: 22px;
+  word-spacing: 15px;
+  padding-top: 10px;
+}
+.topnav a {
+  color: black;
+  padding: auto;
+  text-decoration: none;
+}
+li0 {
+  font-size: 20px;
+  display: inline;
+}
+
+/* begin topnav bar hover css animations */
+.calc{
+  position: relative;
+}
+
+.calc::before, .calc::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.calc::before {
+  top: 0;
+}
+
+.calc::after {
+  bottom: 0;
+}
+
+.calc:hover::before, .calc:hover::after {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+.date{
+  position: relative;
+}
+
+.date::before, .date::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.date::before {
+  top: 0;
+}
+
+.date::after {
+  bottom: 0;
+}
+
+.date:hover::before, .date:hover::after {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+.time{
+  position: relative;
+}
+
+.time::before, .time::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.time::before {
+  top: 0;
+}
+
+.time::after {
+  bottom: 0;
+}
+
+.time:hover::before, .time:hover::after {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+.to-do{
+  position: relative;
+}
+
+.to-do::before, .to-do::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.to-do::before {
+  top: 0;
+}
+
+.to-do::after {
+  bottom: 0;
+}
+
+.to-do:hover::before, .to-do:hover::after {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+.bored{
+  position: relative;
+}
+
+.bored::before, .bored::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.bored::before {
+  top: 0;
+}
+
+.bored::after {
+  bottom: 0;
+}
+
+.bored:hover::before, .bored:hover::after {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+/* end topnav bar hover css animations */
+
+
+main {
+  grid-area: main;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(106, 231, 158, 0.6);
+  box-shadow: 10px 10px 10px rgb(48, 48, 48);
+  padding-left: 2%;
+padding-right: 2%;
+}
+
+main2 {
+  grid-area: main2;
+  border-radius: 3px;
+  text-align: center;
+  margin-right: 2%;
+  margin-left: 2%;
+  background-color: transparent;
+}
+
+table {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+th{
+  background-color: rgb(19, 89, 168);;
+}
+td {
+  border: 1px solid black;
+  width: 65px;
+  background-color: lightgray;
+}
+tr {
+  border: 1px solid black;
+  width: 65px;
+}
+
+th:nth-of-type(7),
+td:nth-of-type(7) {
+  color: blue;
+}
+
+th:nth-of-type(1),
+td:nth-of-type(1) {
+  color: red;
+}
+/* calculator */
+aside {
+
+  grid-area: aside;
+  text-align: center;
+  font-size: 22px;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 50px;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+}
+form {
+  margin: 0 auto;
+  width: 375px;
+  line-height: 15px;
+  background-color: rgb(233, 72, 99);
+}
+.wrap{
+  height: auto;
+  margin: 5%;
+}
+input[type=text]{
+  width: 100%;
+  padding: 5px;
+  font-size: 22px;
+  font-weight: bold;
+
+  border-radius: 5px;
+}
+input[type=button]{
+  width: 89px;
+  padding: 2px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 5px;
+ background-color: lightgray;
+ color: black;
+}
+
+  #del{  
+    width: 100%;
+    color: red;
+    background-color: lightgray;
+}
+
+/* end calculator */
+
+.banner {
+  background-color: rgba(106, 231, 158, 0.6);
+  grid-area: banner;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 22px;
+  margin-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#name {
+  height: 40px;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 2%;
+}
+
+.item {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+}
+ul{
+  padding: 0;
+}
+li {
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  list-style-type: none;
+  width: 20%;
+margin: 0 auto;
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+input[type="text"] {
+  font-size: 12px;
+  padding: 6px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  
+}
+input[type="submit"] {
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+ 
+}
+
+#newItemButton {
+  display: none;
+  text-align: center;
+}
+#newItemForm{
+  background-color: transparent;
+}
+#add{
+  font-size: 12px;
+
+}
+
+@media (min-width: 320px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "topnav " "main" "main2" "aside" "banner";
+
+  }
+  header {
+    grid-area: header;
+    margin-top: 3%;
+text-align: center;
+  }
+
+  .flexContainer {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+  main2 {
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  li0{
+    display: block;
+  }
+
+  .banner {
+    margin-top: 2%;
+    
+  }
+  #name {
+    height: 40px;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "topnav" "main" "p" "main2" "aside" "banner";
+  }
+  li0{
+    display: inline;
+  }
+
+.flexContainer {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+}
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "header header" "topnav topnav" "main main" "main2 aside" "banner banner" "location location";
+  }
+  li0{
+    display: inline;
+  }
+}

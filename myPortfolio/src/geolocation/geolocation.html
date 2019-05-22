@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="geolocation-style.css" />
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>My Dashboard</title>
+ 
+
+</head>
+
+    <body class="container">
+
+    <header><b>Welcome, Sam!</b>
+        <br>
+        Time | Tasks | More
+        <br>
+        <div class="whereyouat"><button onclick="getLocation()">Where You At?</button></div>
+
+        <div id="location"></div>
+        
+    </header>
+
+        <div class="topnav">
+            <li0><a class="calc">Calculator</a></li0>
+            <li0><a class="date">Date</a></li0>
+            <li0><a class="time">Time</a></li0>
+            <li0><a class="to-do">To-Do</a></li0>
+            <li0><a class="bored" href="../incremental-game/incremental-game.html" target="blank">Bored?</a></li0>
+        </div>
+    <main>
+        <h1>Date and Time</h1>
+        <span id="clock"></span>
+    </main>
+    <br>
+    <main2>
+        <table>
+            <tr>
+                <h1>May Calendar</h1>
+                <th>M</th>
+                <th>T</th>
+                <th>W</th>
+                <th>TH</th>
+                <th>F</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+            </tr>
+            <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+            </tr>
+            <tr>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+            </tr>
+        </table>
+    </main2>
+    <aside>
+        <h1>Calculator</h1>
+        <div class="wrap">
+                <form name="calculator">
+                    <input type="text" name="display">
+                    <br>
+                    <input type="button" value="9" onClick="calculator.display.value+='9'">
+                    <input type="button" value="8" onClick="calculator.display.value+='8'">
+                    <input type="button" value="7" onClick="calculator.display.value+='7'">
+                    <input type="button" value="+" onClick="calculator.display.value+='+'">
+                    <br>
+                    <input type="button" value="6" onClick="calculator.display.value+='6'">
+                    <input type="button" value="5" onClick="calculator.display.value+='5'">
+                    <input type="button" value="4" onClick="calculator.display.value+='4'">
+                    <input type="button" value="-" onClick="calculator.display.value+='-'">
+                    <br>
+                    <input type="button" value="3" onClick="calculator.display.value+='3'">
+                    <input type="button" value="2" onClick="calculator.display.value+='2'">
+                    <input type="button" value="1" onClick="calculator.display.value+='1'">
+                    <input type="button" value="*" onClick="calculator.display.value+='*'">
+                    <br>
+                    <input type="button" value="0" onClick="calculator.display.value+='0'">
+                    <input type="button" value="/" onClick="calculator.display.value+='/'">
+                    <input type="button" value="%" onClick="calculator.display.value+='%'">
+                    <input type="button" value="=" onClick="calculator.display.value=eval(calculator.display.value)">
+                    <br>
+                    <input type="button" value="DEL" onclick="calculator.display.value= ''" id="del">
+                </form>
+            </div>
+    </aside>
+    <div class="banner"><b>To-Do List</b>
+        <ul>
+            <li class="item">Mow the lawn</li>
+        </ul>
+        <div id="newItemButton"><button href="#">New Item</button></div>
+        <form id="newItemForm">
+            <input type="text" id="name" placeholder="Enter to-do item"/>
+            <input type="submit" id="add" value="add"/>
+            </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="./geolocation.js"></script>
+   
+</body>
+
+</html>
