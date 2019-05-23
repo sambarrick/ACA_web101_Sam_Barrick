@@ -2,12 +2,9 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "header header" "topnav topnav" "clock clock clock" "main main" "main2 aside" "banner banner";
-}
-
-body {
   width: 100%;
   display: grid;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montaga', serif;
   background-image: linear-gradient(lightgray, black);
   grid-template-columns: 1fr 3fr 1fr;
   margin: 0 auto;
@@ -26,12 +23,30 @@ padding-right: 2%;
 }
 button{
   background-color: transparent;
-  border-color: transparent;
-  padding-bottom: 2px;
+  border-color: white;
+  border-radius: 5px;
   font-size: 18px;
+  margin-bottom: 5%;
+  box-shadow: 5px 5px rgb(48, 48, 48);
 }
-#location{
-  background-color: transparent;
+button:hover {
+  cursor: pointer;
+  animation: jelly 1s;
+}
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
 .topnav {
   display: inline;
@@ -266,7 +281,7 @@ form {
   margin: 0 auto;
   width: 375px;
   line-height: 15px;
-  background-color: rgb(233, 72, 99);
+  background-color: rgba(255, 141, 35, 0.836);
 }
 .wrap{
   height: auto;
@@ -349,10 +364,8 @@ input[type="text"] {
 input[type="submit"] {
   background-color: #fff;
   color: #000;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
-  padding: 5px;
- 
 }
 
 #newItemButton {
@@ -364,13 +377,12 @@ input[type="submit"] {
 }
 #add{
   font-size: 12px;
-
 }
 
-@media (min-width: 320px) {
+@media (min-width: 300px) {
   .container {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-areas: "header" "topnav " "main" "main2" "aside" "banner";
 
   }
@@ -379,12 +391,26 @@ input[type="submit"] {
     margin-top: 3%;
 text-align: center;
   }
-
   .flexContainer {
     width: 300px;
-    margin: 0 auto;
+    margin-right: 5%;
     display: flex;
     flex-direction: row;
+  }
+  input[type=button]{
+    width: 70px;
+    padding: 2px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 5px;
+   background-color: lightgray;
+   color: black;
+  }
+  form {
+    width: 300px;
+    line-height: 10px;
+    background-color: rgba(255, 141, 35, 0.836);
   }
   main2 {
     margin-bottom: 2%;
@@ -398,12 +424,18 @@ text-align: center;
     margin-top: 2%;
     
   }
-  #name {
-    height: 40px;
+  li {
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    list-style-type: none;
     width: 50%;
+    border-radius: 3px;
+    border: 1px solid #000;
     padding: 10px;
-    margin-bottom: 2%;
+    margin-bottom: 10px;
   }
+
 }
 
 @media (min-width: 768px) {
